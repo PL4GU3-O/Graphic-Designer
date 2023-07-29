@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+a@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -849,6 +849,9 @@ section:nth-child(odd) .animate.scroll
         background: var(--bg-color);
         opacity: 0.6;
     }
+    .contact {
+    min-height: auto;
+    padding-bottom: 7rem;
 }
 
 @media (max-width: 520px) {
