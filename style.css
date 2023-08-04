@@ -14,7 +14,7 @@
 :root {
     --text-color: #000;
     --head-color: #3cff00;
-    --main-color: #003152;
+    --main-color: #00b7ff;
     --foot-color: #fff;
 }
 
@@ -81,7 +81,7 @@ section3 {
 .navbar a {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--bg-color);
+    color: var(--foot-color);
     margin-left: 4rem;
 }
   
