@@ -77,7 +77,11 @@ section3 {
     z-index: 1;
     cursor: default;
 }
-  
+
+.navbar {
+    display: none;
+}
+
 .navbar a {
     font-size: 2rem;
     font-weight: 600;
@@ -185,6 +189,7 @@ section3 {
     background-size: cover;
     padding: 5rem 0 5rem;
     padding-left: 10rem;
+    display: var(--navbar);
 }
 
 .CLDB-img img {
