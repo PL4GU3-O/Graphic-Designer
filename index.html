@@ -10,8 +10,7 @@
     </head>
     <body>
         <header class="header">
-            <a href="https://pl4gu3-o.github.io/Graphic-Designer/" class="logo"><img src="images/logo.png" alt=""></a>  
-              <i class="bx bx-menu" id="menu-icon"></i>
+            <a href="https://pl4gu3-o.github.io/Graphic-Designer/" class="logo"><img src="images/logo.png" alt=""></a>
             <nav class="navbar">
                 <a href="#CLDB">Logo Design</a>
                 <a href="#CWD">Web Design</a>
@@ -225,23 +224,6 @@
         let subMenu = document.getElementById("subMenu");
             function toggleMenu(){
                 subMenu.classList.toggle("open-menu");
-            }
-        </script>
-
-        <!-- navbar hide on scroll -->
-        <script>
-            {
-                const nav = document.querySelector(".navbar a");
-                let lastScrollY = window.scrollY;
-
-                window.addEventListener("scroll", () => {
-                    if (lastScrollY < window.scrollY) {
-                        navbar.classlist.add("nav--hidden");
-                    } else {
-                        navbar.classlist.remove("nav--hidden");
-                    }
-                    lastScrollY = window.scrollY;
-                });
             }
         </script>
 
