@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    background: var(--bg-color);
+    background: var(--main-color);
     color: var(--text-color);  
     font-size: 20px;
 }
@@ -51,16 +51,11 @@ section3 {
     left: 0;
     width: 100%;
     padding: 0.5rem 2.5%;
-    background: var(--main-color);
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-}
-
-.header.sticky {
-    border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
-    background: var(--main-color);
 }
 
 .logo img {
@@ -68,14 +63,115 @@ section3 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border: 0.2rem solid var(--main-color);
-    border-radius: 50%;
-    color: var(--main-color);
+    width: 60px;
+    height: 60px;
     z-index: 1;
     cursor: default;
+    margin-right: 13rem;
+    margin-left: 5rem;
+}
+
+#menu {
+    display: flex;
+    font-size: 3.6rem;
+    color: var(--foot-color);
+    padding: 2rem 2% 2rem 11.5%;
+    cursor: pointer;
+}
+
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 75%;
+    right: 5%;
+    width: 350px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 600px;
+}
+
+.sub-menu {
+    background: linear-gradient(to bottom, #00b7ff, #fff);
+    padding: 10px 5% 50px 5%;
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h2{
+    font-weight: 500;
+    color: var(--foot-color);
+}
+
+.user-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 12px 0;
+}
+
+.sub-menu-link p {
+    width: 100%;
+}
+
+.sub-menu-link img {
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 20px;
+}
+
+.sub-menu-link span {
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+.navbar {
+    position: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: .2rem solid var(--main-color);
+    border-radius: 2rem;
+    background: #57cfff;
+    box-shadow: 0 0 0.5rem #1083b1;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar a {
@@ -83,16 +179,17 @@ section3 {
     font-weight: 600;
     color: var(--foot-color);
     margin-left: 4rem;
+    transition: transform 0.2s;
+
 }
   
 .navbar a:hover,
 .navbar a:active {
-    color: var(--foot-color);
+    color: var(--text-color);
 }
 
 #menu-icon {
     font-size: 3.6rem;
-    color: var(--bg-color);
     margin-right: 0;
     display: none;
 }
@@ -100,7 +197,7 @@ section3 {
 .home {
     display: flex;
     align-items: center;
-    padding: 18rem 10% 16rem;
+    padding: 13.5rem 10% 8rem;
     height: 100%;
     background-image: linear-gradient(to top, #fff, #00b7ff);
     background-size: cover;
@@ -109,7 +206,7 @@ section3 {
 
 .home-img img {
     display: flex;
-    width: 100%;
+    width: 110%;
     shape-rendering: crispEdges;
     margin-right: 10rem;
     border-radius: 50%;
@@ -117,18 +214,18 @@ section3 {
 }
 
 .home-img:hover img {
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 .home-content h3{
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 600;
     color: #003152;
     text-shadow: 0 0 5px #00ffff;
 }
 
 .home-content h1 {
-    font-size: 6.2rem;
+    font-size: 7.5rem;
     font-weight: 400;
     color: var(--head-color);
     text-shadow: 0.1rem 0 0 #000;
@@ -139,7 +236,7 @@ section3 {
     margin-right: 15rem;
     color: var(--text-color);
     font-weight: 600;
-    
+    font-size: 2.3rem;
 }
 
 .btn-box {
@@ -148,7 +245,7 @@ section3 {
     justify-content: space-between;
     width: 34.5rem;
     height: 5rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .btn-box .btn {
@@ -164,7 +261,6 @@ section3 {
     border: .2rem solid var(--main-color);
     border-radius: 4rem;
     margin-right: 2rem;
-    margin-left: 2rem;
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -183,7 +279,7 @@ section3 {
     align-items: center;
     background-image: linear-gradient(to top, #fff, #00b7ff);
     background-size: cover;
-    padding: 5rem 0 5rem;
+    padding: 6rem 0 6rem;
     padding-left: 10rem;
 }
 
@@ -203,7 +299,7 @@ section3 {
 
 .CLDB-content p {
     margin-right: 10rem;
-    color: var(--bg-color);
+    color: var(--menu-color);
     font-weight: 600; 
 }
 
@@ -242,7 +338,7 @@ section3 {
     align-items: center;
     background-image: linear-gradient(to top, #fff, #00b7ff);
     background-size: cover;
-    padding: 5rem 0 5rem;
+    padding: 6rem 0 6rem;
     padding-left: 10rem;
 }
 
@@ -258,7 +354,7 @@ section3 {
 .CWD-content p {
     margin-right: 5rem;
     margin-left: 10rem;
-    color: var(--bg-color);
+    color: var(--menu-color);
     font-weight: 600;
 }
 
@@ -303,7 +399,7 @@ section3 {
     align-items: center;
     text-align: center;
     background-size: cover;
-    padding: 3rem 0% 3rem;
+    padding: 6rem 0% 6rem;
 }
 
 .pvd-box1 {
@@ -329,13 +425,13 @@ section3 {
 .pvd-content h1 {
     font-size: 4rem;
     font-weight: 600;
-    color: var(--foot-color);
+    color: #003152;
     padding: 2rem 0 2rem 0;
 }
 
 .pvd-content p {
     word-wrap: break-word;
-    color: var(--bg-color);
+    color: var(--menu-color);
     font-weight: 600;
     margin: 0 9% 0 9%;
 }
@@ -389,7 +485,7 @@ section3 {
     align-items: center;
     text-align: center;
     padding: 9rem 5%;
-    color: var(--bg-color);
+    color: var(--menu-color);
 }
 
 .vm-img img {
@@ -408,7 +504,7 @@ section3 {
     justify-content: center;
     width: 34.5rem;
     height: 5rem;
-    margin: 2rem 0 5rem 35.5%;
+    margin: 5rem 0 2rem 35.5%;
 }
 
 .vm-btn-box .btn {
@@ -433,12 +529,12 @@ section3 {
 }
 
 .about {
-    background-image: linear-gradient(to top, #ffffff, #ff00dd);
-    color: var(--bg-color);
+    background-image: linear-gradient(to top, #ffffff, #00b7ff);
+    color: var(--foot-color);
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 8rem 9% 9rem 9%;
+    padding: 6rem 9% 5rem 9%;
 }
 
 .about-content h1 {
@@ -456,12 +552,13 @@ section3 {
     font-size: 22px;
     font-weight: 400;
     padding: 0 0 2rem;
+    color: var(--text-color);
 }
 
 .why {
     background-image: linear-gradient(#00b7ff, #fff, #00b7ff);
-    color: var(--bg-color);
-    padding: 15rem 0 10rem;
+    color: var(--menu-color);
+    padding: 15rem 0 4rem;
 }
 .why h1 {
     font-size: 34px;
@@ -479,7 +576,7 @@ ul {
     display: flex;
     margin-left: 5px;
     padding: 1rem 0 2rem;
-    color: var(--bg-color);
+    color: var(--menu-color);
     
 }
 
@@ -553,7 +650,7 @@ span {
     right: 0;
     width: 100%;
     height: 100%;
-    background: var(--bg-color);
+    background: var(--menu-color);
     z-index: 98;
 }
 
@@ -602,7 +699,7 @@ span {
 
 @media (max-width: 768px) {
     .header {
-        background: var(--bg-color);
+        background: var(--menu-color);
     }
 
     #menu-icon {
@@ -615,7 +712,7 @@ span {
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: var(--second-bg-color);
+        background: var(--menu-color);
         box-shadow: 0 0.5rem 1rem rbga(0, 0, 0, 0.2);
         z-index: 1;
         transition: 0.25s ease;
@@ -633,7 +730,7 @@ span {
         left: -100%;
         width: 100%;
         height: 100%;
-        background: var(--bg-color);
+        background: var(--menu-color);
         border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
         z-index: -1;
         transition: 0.25s ease;
@@ -661,7 +758,7 @@ span {
 
     .home-imgHover:hover {
         pointer-events: none;
-        background: var(--bg-color);
+        background: var(--menu-color);
         opacity: 0.6;
     }
 }
