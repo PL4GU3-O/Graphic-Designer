@@ -1,17 +1,16 @@
 /*============= toggle icon menu =============*/
 let subMenu = document.getElementById("subMenu");
-            function toggleMenu(){
+            
                 menu.onclick = () => {
                 menu.classList.toggle('bx-x');
                 subMenu.classList.toggle("open-menu");
-            }
-        
+                };
+
 // animation footer on scroll
-let footer = document.querySelector('footer');
-
+let footer = document.querySelector("footer");
+             footer.onmouseover = () => {
 footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
-
-};
+                };
 
 /*============= typed js =============*/
 const typed = new Typed('.multiple-text', {
