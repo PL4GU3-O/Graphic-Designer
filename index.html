@@ -8,19 +8,48 @@
         <!-- box icons -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
-  
     <body>
         <header class="header">
-            <a href="https://pl4gu3-o.github.io/Graphic-Designer/" class="logo"><img src="images/sn.png" alt=""></a>  
-          <i class="bx bx-menu" id="menu-icon"></i>
-          <nav class="navbar">
-                <a href="#branding services">Branding Services</a>
-                <a href="#web design">Web Design</a>
-                <a href="#print design">Print Design</a>
-                <a href="#video">Video</a>
-                <a href="#contact">Contact</a>
+            <a href="https://pl4gu3-o.github.io/Graphic-Designer/" class="logo"><img src="images/logo.png" alt=""></a>  
+          
+            <nav class="navbar">
+                <a href="#CLDB">Logo Design</a>
+                <a href="#CWD">Web Design</a>
+                <a href="#pvd">Print Design</a>
+                <a href="#vm">My Work</a>
+                <a href="#about">About Me</a>
                 <span class="active-nav"></span>
             </nav>
+                <i class="bx bx-menu" id="menu" onclick="toggleMenu()"></i>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/logo.png">
+                            <h2>A_V_N_Sai</h2>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/sn.png">
+                            <p>Edit Profile</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/sn.png">
+                            <p>Settings & Privacy</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/sn.png">
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <img src="images/sn.png">
+                            <p>Logout</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div> 
         </header>
 
       <!-- home section design -->
@@ -140,11 +169,6 @@
                 <img src="images/1688705531742.jpg">
                 <img src="images/1688705531755.jpg">
                 <img src="images/1688705531765.jpg">
-                <img src="images/1688705531775.jpg">
-                <img src="images/1688705531785.png">
-                <img src="images/1688705531794.jpg">
-                <img src="images/1688705531803.jpg">
-                <img src="images/CLBD.png">
             </div>
             <h4 class="vm-content">Intrested in seeing more?</h4>
             <div class="vm-btn-box">
@@ -195,6 +219,31 @@
                     <span class="animate scroll"></span>
                 </div>
             </footer>
+
+        <!-- menu hide -->
+        <script>
+        let subMenu = document.getElementById("subMenu");
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
+
+        <!-- navbar hide on scroll -->
+        <script>
+            {
+                const nav = document.querySelector(".navbar a");
+                let lastScrollY = window.scrollY;
+
+                window.addEventListener("scroll", () => {
+                    if (lastScrollY < window.scrollY) {
+                        navbar.classlist.add("nav--hidden");
+                    } else {
+                        navbar.classlist.remove("nav--hidden");
+                    }
+                    lastScrollY = window.scrollY;
+                });
+            }
+        </script>
 
         <!-- scroll reveal -->
         <script src="https://unpkg.com/scrollreveal"></script>
