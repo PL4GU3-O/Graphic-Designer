@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>contact</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <!-- box icons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheets" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    </head>
+    <body>
+        <!-- alert message start
+        <div class="alert-success">
+            <span>Message Sent! Thank you for contacting us.</span>
+        </div>
+        <div class="alert-error">
+            <span>Something went wrong! Please try again.</span>
+        </div>
+        alert message end -->
+        <header class="header">
+            <a href="https://pl4gu3-o.github.io/Graphic-Designer/" class="logo"><img src="images/logo.png" alt=""></a>
+                <i class="bx bx-menu" id="menu" onclick="toggleMenu()"></i>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="images/avns.jpg">
+                            <h2>A_V_N_Sai</h2>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bxs-home-heart'></i>
+                            <p>Home</p>
+                            <span>></span>
+                        </a>
+                        <a href="Portfolio" class="sub-menu-link">
+                            <i class='bx bxs-user-pin'></i>
+                            <p>Portfolio</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bxs-hand-right'></i>
+                            <p>Help & Support</p>
+                            <span>></span>
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class='bx bx-mobile'></i>
+                            <p>Contact</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                </div> 
+        </header>
+
+        <!-- contact section start -->
+        <div class="contact-section">
+            <div class="contact-info">
+                <div class="home-img">
+                    <img src="images/avns.jpg" alt="">
+                </div>
+                <a href="https://www.google.com/maps"><i class='bx bx-map'></i>Address, City, Country</a>
+                <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWrRmTpGwGwDdVWQzXVqzgTvVZpqmfpGlNdTtwbqkrHTFrDzftwgCGSbHgLfgBVghZXJwhGPL"><i class='bx bx-envelope'></i>avns@gmail.com</a>
+                <a href="#"><i class='bx bx-phone-call'></i>+91 9347007204</a>
+                <a href="#"><i class='bx bx-time'></i>Mon - Fri | 10AM to 6PM</a>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form class="contact" action="" method="post">
+                    <input type="text" name="name" class="text-box" placeholder="First Name" required>
+                    <input type="text" name="name" class="text-box" placeholder="Last Name" required>
+                    <input type="number" name="number" class="number-box" placeholder="Contact Number" required>
+                    <input type="email" name="email" class="text-box" placeholder="Email Address" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <input type="submit" name="submit" class="send-btn" value="Send">
+                </form>
+            </div>
+        </div>
+        <!-- contact section end -->
+
+        <!-- toggle icon menu -->
+        <script>
+            let subMenu = document.getElementById("subMenu");
+            
+            menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            subMenu.classList.toggle("open-menu");
+            };
+        </script>
+
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- custom js -->
+      <script src="script.js"></script>
+    </body>
+</html>
