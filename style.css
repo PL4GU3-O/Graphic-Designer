@@ -67,16 +67,16 @@ section3 {
     height: 60px;
     z-index: 1;
     cursor: default;
-    margin-right: 13rem;
+    margin-top: 1rem;
     margin-left: 5rem;
 }
 
 #menu {
     display: flex;
-    font-size: 2.6rem;
-    color: var(--bg-color);
+    font-size: 3.6rem;
+    color: #112e42;
     cursor: pointer;
-    margin-right: 2rem;
+    margin-right: 3rem;
 }
 
 .sub-menu-wrap {
@@ -166,8 +166,8 @@ section3 {
 
 .navbar {
     position: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: 62%;
     border: .2rem solid var(--main-color);
     border-radius: 2rem;
     background: #57cfff;
@@ -272,7 +272,7 @@ section3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, #fff, #00b7ff);
+    background-image: linear-gradient(to bottom, #fff, #00b7ff);
     background-size: cover;
     padding: 6rem 0 6rem;
     padding-left: 10rem;
@@ -524,8 +524,8 @@ section3 {
 }
 
 .about {
-    background-image: linear-gradient(to top, #ffffff, #00b7ff);
-    color: var(--foot-color);
+    background-image: linear-gradient(to bottom, #ffffff, #00b7ff);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -581,25 +581,25 @@ ul {
     background-size: cover;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5%;
+    margin-bottom: 4rem;
 }
 
 .contact-img img {
     display: flex;
     width: 35%;
     shape-rendering: crispEdges;
-    margin-top: 10%;
     margin-left: 14rem;
     border-radius: 50%;
 }
 
 .contact-info a {
     display: flex;
-    color: var(--bg-color);
+    color: var(--foot-color);
     max-width: 520px;
     padding: 1rem;
     padding-left: 11rem;
     font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -611,7 +611,6 @@ ul {
 .contact-form {
     max-width: 700px;
     margin-right: 50px;
-    margin-top: 4rem;
 }
 
 .contact-info, .contact-form {
@@ -619,7 +618,7 @@ ul {
 }
 
 .contact-form h2 {
-    color: var(--bg-color);
+    color: var(--foot-color);
     text-align: center;
     font-size: 35px;
     text-transform: uppercase;
@@ -628,9 +627,9 @@ ul {
 
 .contact-form .text-box {
     background: var(--text-color);
-    color: var(--bg-color);
+    color: var(--foot-color);
     border: none;
-    width: calc(50% - 10px);
+    width: calc(50.2% - 12px);
     height: 50px;
     padding: 12px;
     font-size: 15px;
@@ -642,7 +641,7 @@ ul {
 
 .contact-form .number-box {
     background: var(--text-color);
-    color: var(--bg-color);
+    color: var(--foot-color);
     border: none;
     width: calc(50% - 10px);
     height: 50px;
@@ -665,7 +664,7 @@ ul {
 
 .contact-form textarea {
     background: var(--text-color);
-    color: var(--bg-color);
+    color: var(--foot-color);
     border: none;
     width: 100%;
     padding: 12px;
@@ -682,22 +681,16 @@ ul {
 .contact-form .send-btn {
     align-items: center;
     background: var(--main-color);
-    color: var(--bg-color);
-    border: none;
+    color: var(--text-color);
+    border: .2rem solid var(--text-color);
     width: 120px;
     height: 40px;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 5px;
-    border-radius: 5px;
+    border-radius: 4rem;
     cursor: pointer;
-    transition: .3s;
-    transition-property: background;
-}
-
-.contact-form .send-btn:hover {
-    background: var(--main-color);
 }
 
 .alert-success {
