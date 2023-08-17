@@ -1,4 +1,4 @@
-nia@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -773,11 +773,6 @@ section:nth-child(odd) .animate.scroll
     .home {
         padding: 0 4%;
     }
-     
-    .contact {
-        min-height: auto;
-        min-width: auto;
-        padding-bottom: 7rem;
 
     .footer {
         padding: 2rem 4%;
@@ -854,9 +849,6 @@ section:nth-child(odd) .animate.scroll
         background: var(--bg-color);
         opacity: 0.6;
     }
-    .contact {
-    min-height: auto;
-    padding-bottom: 7rem;
 }
 
 @media (max-width: 520px) {
