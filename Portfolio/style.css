@@ -476,7 +476,8 @@ span {
     position: relative;
     display: inline-block;
     font-size: 2.5rem;
-    margin: 0 0 1.5rem;
+  padding: 4rem;
+    margin: 0 0 0.5rem;
 }
 
 .skills-column .skills-box {
@@ -713,7 +714,7 @@ span {
     right: 0;
     width: 100%;
     height: 100%;
-    background: var(--bg-color);
+    background: transparent;
     z-index: 98;
 }
 
